@@ -27,3 +27,11 @@ h2l2 = LED(21)
 h2l3 = LED(26)
 
 h1l1.on()
+sleep 2
+h1l1.off()
+h1l2.on()
+sleep 2
+h1l2.off()
+h1l3.on()
+sleep 2
+h1l3.off()
