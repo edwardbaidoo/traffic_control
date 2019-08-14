@@ -1,4 +1,5 @@
 from gpiozero import LED
+import time
 
 #### NOTES on GPIO PINS
 # Number of Traffic Heads = 2
@@ -27,11 +28,21 @@ h2l2 = LED(21)
 h2l3 = LED(26)
 
 h1l1.on()
-sleep 2
+time.sleep(2)
 h1l1.off()
-h1l2.on()
-sleep 2
+h1l2.blink(2,0.5)
+time.sleep(10)
 h1l2.off()
 h1l3.on()
-sleep 2
+time.sleep(2)
 h1l3.off()
+
+h2l1.on()
+time.sleep(2)
+h2l1.off()
+h2l2.blink(2,0.5)
+time.sleep(10)
+h2l2.off()
+h2l3.on()
+time.sleep(2)
+h2l3.off()
