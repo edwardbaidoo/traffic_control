@@ -17,4 +17,4 @@
 3. LED 3 = h2l3 = 37(26)
 
 
-> PS. This project was made for backup reasons and is not fully my own work. Modified project url is ```https://www.github.com/phaphuang/vehicle-counting-opencv```
+> PS. This project was made for backup reasons and is not fully my own work. Modified project url is https://www.github.com/phaphuang/vehicle-counting-opencv
