@@ -15,3 +15,15 @@ from gpiozero import LED
 # LED 1 = h2l1 = 38(20)
 # LED 2 = h2l2 = 40(21)
 # LED 3 = h2l3 = 37(26)
+
+#Initialize LEDs
+
+h1l1 = LED(22)
+h1l2 = LED(23)
+h1l3 = LED(24)
+
+h2l1 = LED(20)
+h2l2 = LED(21)
+h2l3 = LED(26)
+
+h1l1.on()
