@@ -15,3 +15,6 @@
 1. LED 1 = h2l1 = 38(20)
 2. LED 2 = h2l2 = 40(21)
 3. LED 3 = h2l3 = 37(26)
+
+
+> PS. This project was made for backup reasons and is not fully my own work. Modified project url is ```https://www.github.com/phaphuang/vehicle-counting-opencv```
