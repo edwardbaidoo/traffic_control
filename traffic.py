@@ -27,6 +27,8 @@ h2l1 = LED(20)
 h2l2 = LED(21)
 h2l3 = LED(26)
 
+
+# Test LED
 h1l1.on()
 time.sleep(2)
 h1l1.off()
