@@ -49,15 +49,30 @@ h2l3 = LED(26)
 # time.sleep(2)
 # h2l3.off()
 
-if y >= -0.2 and y <= 0.2:
+#Response actions
+
+if y1 >= -0.2 and y1 <= 0.2:
     print("Traffic load normal, no changes to be made")
-elif y < -0.2 and y >= -0.5:
+elif y1 < -0.2 and y1 >= -0.5:
     print("Traffic Minimal, saving time")
-elif y < -0.5 and y >= -1.0:
+elif y1 < -0.5 and y1 >= -1.0:
     print("Traffic Very low, Routing time")
-elif y > 0.2 and y <= 0.5:
+elif y1 > 0.2 and y1 <= 0.5:
     print("Increased traffic load, Increasing GLT")
-elif y > 0.5 and y <= 1.0:
+elif y1 > 0.5 and y1 <= 1.0:
+    print("Extreme traffic condition, Increasing GLT to P1")
+else:
+    print("Undetermined Traffic behvior, Human Intervention necessary")
+
+if y2 >= -0.2 and y2 <= 0.2:
+    print("Traffic load normal, no changes to be made")
+elif y2 < -0.2 and y2 >= -0.5:
+    print("Traffic Minimal, saving time")
+elif y2 < -0.5 and y2 >= -1.0:
+    print("Traffic Very low, Routing time")
+elif y2 > 0.2 and y2 <= 0.5:
+    print("Increased traffic load, Increasing GLT")
+elif y2 > 0.5 and y2 <= 1.0:
     print("Extreme traffic condition, Increasing GLT to P1")
 else:
     print("Undetermined Traffic behvior, Human Intervention necessary")
