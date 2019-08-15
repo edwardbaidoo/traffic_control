@@ -29,22 +29,35 @@ h2l3 = LED(26)
 
 
 # Test LED
-h1l1.on()
-time.sleep(2)
-h1l1.off()
-h1l2.blink(2,0.5)
-time.sleep(10)
-h1l2.off()
-h1l3.on()
-time.sleep(2)
-h1l3.off()
+# h1l1.on()
+# time.sleep(2)
+# h1l1.off()
+# h1l2.blink(2,0.5)
+# time.sleep(10)
+# h1l2.off()
+# h1l3.on()
+# time.sleep(2)
+# h1l3.off()
 
-h2l1.on()
-time.sleep(2)
-h2l1.off()
-h2l2.blink(2,0.5)
-time.sleep(10)
-h2l2.off()
-h2l3.on()
-time.sleep(2)
-h2l3.off()
+# h2l1.on()
+# time.sleep(2)
+# h2l1.off()
+# h2l2.blink(2,0.5)
+# time.sleep(10)
+# h2l2.off()
+# h2l3.on()
+# time.sleep(2)
+# h2l3.off()
+
+if y >= -0.2 and y <= 0.2:
+    print("Traffic load normal, no changes to be made")
+elif y < -0.2 and y >= -0.5:
+    print("Traffic Minimal, saving time")
+elif y < -0.5 and y >= -1.0:
+    print("Traffic Very low, Routing time")
+elif y > 0.2 and y <= 0.5:
+    print("Increased traffic load, Increasing GLT")
+elif y > 0.5 and y <= 1.0:
+    print("Extreme traffic condition, Increasing GLT to P1")
+else:
+    print("Undetermined Traffic behvior, Human Intervention necessary")
