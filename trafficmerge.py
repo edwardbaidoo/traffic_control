@@ -260,20 +260,32 @@ def case6():
 if finY >= -0.2 and finY <= 0.2:
     print("Traffic load normal, no changes to be made")
     case1()
+    case1()
+    case1()
 elif finY < -0.2 and finY >= -0.5:
     print("Traffic Minimal, saving time")
+    case2()
+    case2()
     case2()
 elif finY < -0.5 and finY >= -1.0:
     print("Traffic Very low, Routing time")
     case3()
+    case3()
+    case3()
 elif finY > 0.2 and finY <= 0.5:
     print("Increased traffic load, Increasing GLT")
+    case4()
+    case4()
     case4()
 elif finY > 0.5 and finY <= 1.0:
     print("Extreme traffic condition, Increasing GLT to P1")
     case5()
+    case5()
+    case5()
 else:
     print("Undetermined Traffic behvior, Human Intervention necessary")
+    case6()
+    case6()
     case6()
 
 # if y2 >= -0.2 and y2 <= 0.2:
