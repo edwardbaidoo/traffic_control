@@ -42,8 +42,8 @@ y1 = norm(v1,a1,b1,y1)
 
 #lane2
 #initialization
-d2 = int(input("Enter Lane1 design Capacity:"))
-x2 = int(input("Enter Lane1 Current vehicle count:"))
+d2 = int(input("Enter Lane2 design Capacity:"))
+x2 = int(input("Enter Lane2 Current vehicle count:"))
 v2=0
 a2 = 0
 b2=100
@@ -67,3 +67,12 @@ def norm(v2,a2,b2,y2):
 
 print(norm(v2,a2,b2,y2))
 y2 = norm(v2,a2,b2,y2)
+
+if y1 > y2:
+    print("Lane1 has most activity\n")
+    finY = y1
+    print("Lane1 norm ={}".format(finY))
+elif y2 > y1:
+    print("Lane2 has most activity\n")
+    finY = y2
+    print("Lane2 norm ={}".format(finY))

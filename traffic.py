@@ -171,40 +171,40 @@ def case6():
     time.sleep(100)
 
 #conditions
-if y1 >= -0.2 and y1 <= 0.2:
+if finY >= -0.2 and finY <= 0.2:
     print("Traffic load normal, no changes to be made")
     case1()
-elif y1 < -0.2 and y1 >= -0.5:
+elif finY < -0.2 and finY >= -0.5:
     print("Traffic Minimal, saving time")
     case2()
-elif y1 < -0.5 and y1 >= -1.0:
+elif finY < -0.5 and finY >= -1.0:
     print("Traffic Very low, Routing time")
     case3()
-elif y1 > 0.2 and y1 <= 0.5:
+elif finY > 0.2 and finY <= 0.5:
     print("Increased traffic load, Increasing GLT")
     case4()
-elif y1 > 0.5 and y1 <= 1.0:
+elif finY > 0.5 and finY <= 1.0:
     print("Extreme traffic condition, Increasing GLT to P1")
     case5()
 else:
     print("Undetermined Traffic behvior, Human Intervention necessary")
     case6()
 
-if y2 >= -0.2 and y2 <= 0.2:
-    print("Traffic load normal, no changes to be made")
-    case1()
-elif y2 < -0.2 and y2 >= -0.5:
-    print("Traffic Minimal, saving time")
-    case4()
-elif y2 < -0.5 and y2 >= -1.0:
-    print("Traffic Very low, Routing time")
-    case5()
-elif y2 > 0.2 and y2 <= 0.5:
-    print("Increased traffic load, Increasing GLT")
-    case2()
-elif y2 > 0.5 and y2 <= 1.0:
-    print("Extreme traffic condition, Increasing GLT to P1")
-    case3()
-else:
-    print("Undetermined Traffic behvior, Human Intervention necessary")
-    case6()
+# if y2 >= -0.2 and y2 <= 0.2:
+#     print("Traffic load normal, no changes to be made")
+#     case1()
+# elif y2 < -0.2 and y2 >= -0.5:
+#     print("Traffic Minimal, saving time")
+#     case4()
+# elif y2 < -0.5 and y2 >= -1.0:
+#     print("Traffic Very low, Routing time")
+#     case5()
+# elif y2 > 0.2 and y2 <= 0.5:
+#     print("Increased traffic load, Increasing GLT")
+#     case2()
+# elif y2 > 0.5 and y2 <= 1.0:
+#     print("Extreme traffic condition, Increasing GLT to P1")
+#     case3()
+# else:
+#     print("Undetermined Traffic behvior, Human Intervention necessary")
+#     case6()
